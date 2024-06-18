@@ -9,6 +9,9 @@ export default {
     extend: {
       fontFamily: {
         hanken: ['Hanken Grotesk', 'sans-serif'],
+      }, 
+      colors: {
+        "site-black": "#060606"
       }
     },
   },

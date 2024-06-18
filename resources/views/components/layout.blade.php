@@ -12,16 +12,16 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 
-<body class='font-hanken'>
-    <header>
-        <nav>
+<body class="font-hanken bg-site-black text-gray-100 ">
+    <header class="px-10">
+        <nav class="flex justify-between items-center py-4 border-b border-white/20">
             <div>
-                <a href="/">
+                <a href="/" class="flex items-center gap-2">
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
                     Pixel Positions
                 </a>
             </div>
-            <div>
+            <div class="space-x-6 font-semibold">
                 <a href="">Jobs</a>
                 <a href="">Careers</a>
                 <a href="">Salaries</a>
@@ -29,7 +29,7 @@
             <div>post a job</div>
         </nav>
     </header>
-    <main>
+    <main class="mt-10 px-10 max-w-screen-lg border">
         {{ $slot }}
     </main>
 </body>
