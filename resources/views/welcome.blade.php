@@ -13,6 +13,18 @@
         </section>
         <section>
             <x-section-heading>Tags</x-section-heading>
+            <div class="mt-4 space-x-2">
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+                <x-tag>Sales</x-tag>
+            </div>
         </section>
         <section>
             <x-section-heading>Recent Jobs</x-section-heading>
