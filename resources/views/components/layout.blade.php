@@ -11,9 +11,10 @@
 <body>
     <header>
         <nav>
-            <div>logo
+            <div>
                 <a href="/">
-                    <img src="{{ Vite::asste('resources/images/logo.svg') }}" alt="">
+                    {{-- <img src="{{ Vite::asste('resources/images/logo.svg') }}" alt=""> --}}
+                    Pixel Positions
                 </a>
             </div>
             <div>
@@ -25,7 +26,7 @@
         </nav>
     </header>
     <main>
-        {{ slot }}
+        {{ $slot }}
     </main>
 </body>
 
