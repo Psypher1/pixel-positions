@@ -29,7 +29,7 @@
             <div>post a job</div>
         </nav>
     </header>
-    <main class="mt-10 px-10 max-w-screen-lg border">
+    <main class="mt-10 px-10 max-w-screen-lg  mx-auto">
         {{ $slot }}
     </main>
 </body>
