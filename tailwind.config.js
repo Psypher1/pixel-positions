@@ -12,6 +12,9 @@ export default {
       }, 
       colors: {
         "site-black": "#060606"
+      },
+      fontSize:{
+        xxs: ["0.625rem", "1rem"]
       }
     },
   },
