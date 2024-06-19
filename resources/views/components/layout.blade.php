@@ -26,7 +26,7 @@
                 <a href="">Careers</a>
                 <a href="">Salaries</a>
             </div>
-            <div>post a job</div>
+            <div>Post a job</div>
         </nav>
     </header>
     <main class="mt-10 px-10 max-w-screen-lg  mx-auto">
