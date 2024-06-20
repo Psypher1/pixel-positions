@@ -5,7 +5,7 @@
             <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
             <form action="" class="mt-6">
                 <input type="text" placeholder="Construction Worker..."
-                    class="rounded-xl bg-white/5 px-5 py-4 w-full border border-white/10 max-w-xl">
+                    class="rounded-xl bg-white/5 px-5 py-4 w-full border border-white/10 max-w-xl outline-none">
             </form>
         </section>
         <section class="pt-10">
