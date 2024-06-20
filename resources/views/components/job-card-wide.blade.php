@@ -1,4 +1,4 @@
-<article class="p-4 bg-white/5 rounded-xl flex gap-x-6">
+<x-panel class="flex gap-x-6">
     <div>
         <x-employer-logo />
     </div>
@@ -8,7 +8,7 @@
             <h3>Keystone Inc</h3>
         </a>
 
-        <h3 class="text-xl mt-3 font-semibold">Seles Lead</h3>
+        <h3 class="group-hover:text-blue-700 text-xl mt-3 font-semibold">Seles Lead</h3>
         <p class="mt-auto text-sm text-gray-400">Hybrid - $100 000</p>
 
     </div>
@@ -18,4 +18,4 @@
         <x-tag>Sales</x-tag>
         <x-tag>Sales</x-tag>
     </div>
-</article>
+</x-panel>

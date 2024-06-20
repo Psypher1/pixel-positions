@@ -1,8 +1,8 @@
-<article class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-    <h3 class="self-start text-sm">Keystone Inc</h3>
-    <div class="py-8 font-semibold">
-        <p>Seles Lead</p>
-        <p>$100,000</p>
+<x-panel class="flex flex-col text-center">
+    <p class="self-start text-sm text-gray-400">Keystone Inc</p>
+    <div class="py-8 ">
+        <h3 class="font-semibold group-hover:text-blue-600 text-xl">Seles Lead</h3>
+        <p class="mt-3 text-sm">Hybrid - From $100,000</p>
     </div>
 
     <div class="flex justify-between items-center mt-auto">
@@ -14,4 +14,4 @@
 
         <x-employer-logo :width="42" />
     </div>
-</article>
+</x-panel>
