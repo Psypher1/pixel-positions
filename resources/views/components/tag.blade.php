@@ -1,5 +1,5 @@
-@props(['tag', 'size' => 'base'])
-
+@props(['size' => 'base'])
+{{-- tag that's supposed to be passed isn't getting here --}}
 @php
     $classes = 'bg-white/10 font-semibold rounded-xl hover:bg-white/25 transition-colors duration-300';
 
@@ -12,4 +12,4 @@
     }
 @endphp
 
-<a href="/tags/{{ strtolower($tag->name) }}" class="{{ $classes }}">{{ $tag->name }}</a>
+<a href="/tags/" class="{{ $classes }}">{{ $tag->name }}</a>

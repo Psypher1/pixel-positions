@@ -13,7 +13,10 @@
                 Top Jobs
             </x-section-heading>
             <div class="grid gap-8 grid-cols-3 mt-3">
-
+                {{-- 
+                @foreach ($jobs as $job)
+                    <x-job-card-wide :$job />
+                @endforeach --}}
                 <x-job-card />
                 <x-job-card />
                 <x-job-card />
@@ -22,11 +25,14 @@
         <section>
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-4 space-x-2">
+                {{-- <x-tag :tag="$tag"/> when both are the samw --}}
+
+                {{-- tags array is being arriving here --}}
                 @foreach ($tags as $tag)
-                    {{-- <x-tag :tag="$tag"/> when both are the samw --}}
-                    <x-tag :$tag />
+                    <x-tag :tag="$tag" />
                 @endforeach
                 <x-tag>Sales</x-tag>
+
                 <x-tag>Sales</x-tag>
                 <x-tag>Sales</x-tag>
                 <x-tag>Sales</x-tag>
@@ -40,7 +46,9 @@
         <section>
             <x-section-heading>Recent Jobs</x-section-heading>
             <div class="mt-4 space-y-6">
-                <x-job-card-wide />
+                @foreach ($jobs as $job)
+                    <x-job-card-wide :$job />
+                @endforeach
                 <x-job-card-wide />
                 <x-job-card-wide />
             </div>

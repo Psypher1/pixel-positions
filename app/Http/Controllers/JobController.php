@@ -16,11 +16,14 @@ class JobController extends Controller
     {
 
         $jobs = Job::simplePaginate(5);
+        $tags = Tag::all();
+
 
         return view('jobs.index', [
-            'jobs' => Job::all(),
-            'tags' => Tag::all()
+            'jobs' => $jobs,
+            'tags' => $tags
         ]);
+
     }
 
     /**
