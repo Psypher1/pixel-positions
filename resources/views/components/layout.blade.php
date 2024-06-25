@@ -17,8 +17,9 @@
         <nav class="flex justify-between items-center py-4 border-b border-white/20">
             <div>
                 <a href="/" class="flex items-center gap-2">
-                    <img src="{{ Vite::asset('resources/images/pixel-logo.svg') }}" width="20" alt="">
-                    Pixel Positions
+                    {{-- <img src="{{ Vite::asset('resources/images/pixel-logo.svg') }}" width="20" alt=""> --}}
+                    <img class="block" src="{{ 'images/pixel-logo.svg' }}" width="20" alt="Pixel Positions Logo">
+                    <span class="block">Pixel Positions</span>
                 </a>
             </div>
             <div class="space-x-6 font-semibold">
