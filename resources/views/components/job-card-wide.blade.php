@@ -7,11 +7,11 @@
 
     <div class="flex-1 flex flex-col">
         <a class="self-start text-sm text-gray-400">
-            <h3>Keystone Inc</h3>
+            <h3> {{ $job->employer->name }} </h3>
         </a>
 
-        <h3 class="group-hover:text-blue-700 text-xl mt-3 font-semibold">Seles Lead</h3>
-        <p class="mt-auto text-sm text-gray-400">Hybrid - $100 000</p>
+        <h3 class="group-hover:text-blue-700 text-xl mt-3 font-semibold">{{ $job->title }} </h3>
+        <p class="mt-auto text-sm text-gray-400">{{ $job->job_type }} - {{ $job->salary }} </p>
 
     </div>
 

@@ -1,10 +1,10 @@
 @props(['job'])
 
 <x-panel class="flex flex-col text-center">
-    <p class="self-start text-sm text-gray-400">Keystone Inc</p>
+    <p class="self-start text-sm text-gray-400">{{ $job->employer->name }}</p>
     <div class="py-8 ">
-        <h3 class="font-semibold group-hover:text-blue-600 text-xl">Seles Manager</h3>
-        <p class="mt-3 text-sm">Hybrid - From $100,000</p>
+        <h3 class="font-semibold group-hover:text-blue-600 text-xl">{{ $job->title }} </h3>
+        <p class="mt-3 text-sm">{{ $job->job_type }} - {{ $job->salary }}</p>
     </div>
 
     <div class="flex justify-between items-center mt-auto">

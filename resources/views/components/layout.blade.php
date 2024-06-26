@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/images/pixel-logo.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Pixel Positions</title>
@@ -18,8 +19,8 @@
             <div>
                 <a href="/" class="flex items-center gap-2">
                     {{-- <img src="{{ Vite::asset('resources/images/pixel-logo.svg') }}" width="20" alt=""> --}}
-                    <img class="block" src="{{ 'images/pixel-logo.svg' }}" width="20" alt="Pixel Positions Logo">
-                    <span class="block">Pixel Positions</span>
+                    <img class="block" src="{{ 'images/og-logo.svg' }}" alt="Pixel Positions Logo">
+                    {{-- <span class="block">Pixel Positions</span> --}}
                 </a>
             </div>
             <div class="space-x-6 font-semibold">
