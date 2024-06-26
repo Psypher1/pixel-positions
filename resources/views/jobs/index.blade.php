@@ -25,12 +25,12 @@
         <section>
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-4 space-x-2">
-                {{-- <x-tag :tag="$tag"/> when both are the samw --}}
+
 
                 {{-- tags array is being arriving here --}}
-                @foreach ($tags as $tag)
+                {{-- @foreach ($tags as $tag)
                     <x-tag :tag="$tag" />
-                @endforeach
+                @endforeach --}}
                 <x-tag>Sales</x-tag>
 
                 <x-tag>Sales</x-tag>
