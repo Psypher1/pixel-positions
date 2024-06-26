@@ -12,5 +12,5 @@
     }
 @endphp
 
-<a href="/tags/" class="{{ $classes }}">{{ $slot }}</a>
-{{-- <a href="/tags/" class="{{ $classes }}">{{ $tag->name }}</a> --}}
+{{-- <a href="/tags/" class="{{ $classes }}">{{ $slot }}</a> --}}
+<a href="/tags/" class="{{ $classes }}">{{ $tag->name }}</a>

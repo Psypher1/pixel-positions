@@ -1,3 +1,5 @@
+@props(['job'])
+
 <x-panel class="flex flex-col text-center">
     <p class="self-start text-sm text-gray-400">Keystone Inc</p>
     <div class="py-8 ">
@@ -7,9 +9,16 @@
 
     <div class="flex justify-between items-center mt-auto">
         <div>
-            <x-tag size="small">Sales</x-tag>
-            <x-tag size="small">Marketing</x-tag>
-            <x-tag size="small">Manager</x-tag>
+
+            @if (count($job->tags) > 0)
+
+                @foreach ($job->tags as $tag)
+                    <x-tag :tag="$tag" size="small">Marketing</x-tag>
+                @endforeach
+            @endif
+            {{-- <x-tag size="small"></x-tag> //Its expecting you to pass a tag here also --}}
+            {{-- <x-tag size="small">Manager</x-tag>
+            <x-tag size="small">Sales</x-tag> --}}
         </div>
 
         <x-employer-logo :width="42" />
