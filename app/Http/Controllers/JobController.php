@@ -15,8 +15,11 @@ class JobController extends Controller
     public function index()
     {
 
-        $jobs = Job::simplePaginate(5);
+        $jobs = Job::with(['tags', 'employer'])->simplePaginate(5);
         $tags = Tag::all();
+
+        // return $jobs;
+        // dd($tags);
 
 
         return view('jobs.index', [
