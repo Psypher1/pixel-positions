@@ -13,7 +13,7 @@
                 Top Jobs
             </x-section-heading>
             <div class="grid gap-8 grid-cols-3 mt-3">
-                @foreach ($jobs as $job)
+                @foreach ($featuredJobs as $job)
                     <x-job-card :job="$job" />
                     {{-- <x-job-card-wide :$job /> --}}
                 @endforeach
