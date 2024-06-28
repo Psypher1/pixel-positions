@@ -19,7 +19,10 @@
             <div>
                 <a href="/" class="flex items-center gap-2">
                     {{-- <img src="{{ Vite::asset('resources/images/pixel-logo.svg') }}" width="20" alt=""> --}}
-                    <img class="block" src="{{ 'images/og-logo.svg' }}" alt="Pixel Positions Logo">
+                    {{-- <img class="block" src="{{ asset('images/pixel-logo.svg') }}" width="20"alt="Pixel Positions Logo"> --}}
+
+                    {{-- <img src="{{ Vite::asset('resources/images/og-logo.svg') }}" " alt=""> --}}
+                    <img class="block" src="{{ asset('images/og-logo.svg') }}" alt="Pixel Positions Logo">
                     {{-- <span class="block">Pixel Positions</span> --}}
                 </a>
             </div>
