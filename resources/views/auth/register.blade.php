@@ -6,7 +6,7 @@
             <x-forms.input label="Name" name="name" />
             <x-forms.input label="Email" name="email" type="email" />
             <x-forms.input label="Password" name="password" type="password" />
-            <x-forms.input label="Confirm Password" name="email" type="password_confirm" />
+            <x-forms.input label="Confirm Password" name="password_confirmation" type="password" />
 
             <x-forms.divider />
             <x-forms.input label="Employer Name" name="employer" />
