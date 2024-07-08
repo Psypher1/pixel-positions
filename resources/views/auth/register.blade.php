@@ -2,13 +2,14 @@
     <section class="pt-6">
         <x-page-heading>Register</x-page-heading>
 
-        <x-forms.form method="POST" action="/auth/register" encytpe="multipar/form-data">
+        <x-forms.form method="POST" action="/auth/register" enctype="multipart/form-data">
             <x-forms.input label="Name" name="name" />
             <x-forms.input label="Email" name="email" type="email" />
             <x-forms.input label="Password" name="password" type="password" />
             <x-forms.input label="Confirm Password" name="password_confirmation" type="password" />
 
             <x-forms.divider />
+
             <x-forms.input label="Employer Name" name="employer" />
             <x-forms.input label="Employer Logo" name="logo" type="file" />
 
