@@ -31,7 +31,17 @@
                 <a href="#">Careers</a>
                 <a href="#">Salaries</a>
             </div>
-            <a href="#">Post a job</a>
+
+            @auth()
+                <a href="/jobs/create">Post a job</a>
+            @endauth
+
+            @guest
+                <div class="space-x-6 font-semibold">
+                    <a href="/auth/register">Sign Up</a>
+                    <a href="/auth/login">Login</a>
+                </div>
+            @endguest
         </nav>
     </header>
     <main class="mt-10 px-10 pb-20 max-w-screen-lg  mx-auto">

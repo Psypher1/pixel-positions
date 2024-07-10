@@ -4,7 +4,7 @@
 
         <x-page-heading>Log In</x-page-heading>
 
-        <x-forms.form method="POST" action="/login">
+        <x-forms.form method="POST" action="/auth/login">
             <x-forms.input label="Email" name="email" type="email" placeholder="Email" />
             <x-forms.input label="Password" name="password" type="password" placeholder="Password" />
 

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
 class SessionController extends Controller
-{                                                                      
+{
 
     /**
      * Show the form for creating a new resource.
@@ -34,8 +34,6 @@ class SessionController extends Controller
         }
 
         request()->session()->regenerate();
-
-        // $request->session()->regenerate();
 
         return redirect('/');
     }
