@@ -3,10 +3,13 @@
     <div class="space-y-16">
         <section class="text-center  pt-6">
             <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
-            <form action="" class="mt-6 max-w-xl mx-auto">
+            {{-- <form action="" class="mt-6 max-w-xl mx-auto">
                 <input type="text" placeholder="Construction Worker..."
                     class="block rounded-xl bg-white/5 px-5 py-4 w-full outline-none border border-gray-500  focus:ring-blue-500 focus:border-blue-500">
-            </form>
+            </form> --}}
+            <x-forms.form action="/search" class="mt-6">
+                <x-forms.input :label="false" name="q" placeholder="Construction Worker..." />
+            </x-forms.form>
         </section>
         <section class="pt-10">
             <x-section-heading>
