@@ -14,5 +14,7 @@ Route::get('/auth/register', [RegisterUserController::class, 'create']);
 Route::post('/auth/register', [RegisterUserController::class, 'store']);
 
 Route::get('/auth/login', [SessionController::class, 'create']);
-Route::get('/auth/login', [SessionController::class, 'store']);
-Route::get('/auth/logout', [SessionController::class, 'destroy']);
+Route::post('/auth/login', [SessionController::class, 'store']);
+
+Route::delete('/auth/logout', [SessionController::class, 'destroy']);
+
