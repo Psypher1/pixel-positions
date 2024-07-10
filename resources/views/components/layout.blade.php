@@ -33,7 +33,16 @@
             </div>
 
             @auth()
-                <a href="/jobs/create">Post a job</a>
+                <div class="flex space-x-6 font-semibold">
+
+                    <a href="/jobs/create">Post a job</a>
+                    <form method="POST" action="/auth/logout">
+                        @csrf
+                        @method('DELETE')
+
+                        <button>Log Out</button>
+                    </form>
+                </div>
             @endauth
 
             @guest
