@@ -27,11 +27,11 @@
                 </a>
             </div>
             <div class="space-x-6 font-semibold">
-                <a href="">Jobs</a>
-                <a href="">Careers</a>
-                <a href="">Salaries</a>
+                <a href="#">Jobs</a>
+                <a href="#">Careers</a>
+                <a href="#">Salaries</a>
             </div>
-            <div>Post a job</div>
+            <a href="#">Post a job</a>
         </nav>
     </header>
     <main class="mt-10 px-10 pb-20 max-w-screen-lg  mx-auto">
