@@ -6,11 +6,16 @@
     </div>
 
     <div class="flex-1 flex flex-col">
-        <a class="self-start text-sm text-gray-400">
-            <h3> {{ $job->employer->name }} </h3>
-        </a>
+        <h4 class="self-start text-sm text-gray-400">
+            {{ $job->employer->name }}
+        </h4>
 
-        <h3 class="group-hover:text-blue-700 text-xl mt-3 font-semibold">{{ $job->title }} </h3>
+        <h3 class="group-hover:text-blue-700 text-xl mt-3 font-semibold">
+            <a href="{{ $job->url }}" target="_blank">
+
+                {{ $job->title }}
+        </h3>
+        </a>
         <p class="mt-auto text-sm text-gray-400">{{ $job->job_type }} - {{ $job->salary }} </p>
 
     </div>
