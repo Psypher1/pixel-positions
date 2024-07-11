@@ -5,8 +5,14 @@
         <x-forms.form method="POST" action="/jobs">
             <x-forms.input label="Title" name="title" placeholder="Title" />
             <x-forms.input label="Salary" name="salary" placeholder="$200 000" />
-            <x-forms.input label="Location" name="location" placeholder="Location" />
 
+            {{-- <x-forms.input label="Location" name="location" placeholder="Location" /> --}}
+
+            <x-forms.select label="Location" name="location">
+                <option>On Site</option>
+                <option>Remote</option>
+                <option>Hybrid</option>
+            </x-forms.select>
             <x-forms.select label="Job Type" name="job_type">
                 <option>Full Time</option>
                 <option>Part Time</option>
