@@ -21,12 +21,11 @@ class JobController extends Controller
 
         // $jobs = Job::with(['tags', 'employer'])->simplePaginate(5);
         // $jobs = Job::all()->groupBy('featured');
-        $jobs = Job::latest()->get()->groupBy('featured');
+        $jobs = Job::latest()->with(['employer', 'tags'])->get()->groupBy('featured');
         $tags = Tag::all();
 
         // return $jobs;
         // dd($tags);
-
 
         return view('jobs.index', [
             'jobs' => $jobs[0],
