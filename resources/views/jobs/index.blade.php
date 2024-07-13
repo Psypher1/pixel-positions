@@ -30,22 +30,10 @@
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-4 space-x-2">
 
-
-                {{-- tags array is being arriving here --}}
-
-
                 @foreach ($tags as $tag)
                     <x-tag :tag="$tag" />
                 @endforeach
-                {{-- <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag>
-                <x-tag>Sales</x-tag> --}}
+
             </div>
         </section>
         <section>
