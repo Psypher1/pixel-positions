@@ -17,7 +17,7 @@
             @if (count($job->tags) > 0)
 
                 @foreach ($job->tags as $tag)
-                    <x-tag :tag="$tag" size="small">Marketing</x-tag>
+                    <x-tag :tag="$tag" size="small" />
                 @endforeach
             @endif
             {{-- <x-tag size="small"></x-tag> //Its expecting you to pass a tag here also --}}
@@ -25,6 +25,6 @@
             <x-tag size="small">Sales</x-tag> --}}
         </div>
 
-        <x-employer-logo :width="42" />
+        <x-employer-logo :employer="$job->employer" :width="42" />
     </div>
 </x-panel>
