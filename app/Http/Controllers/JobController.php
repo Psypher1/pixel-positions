@@ -91,10 +91,10 @@ class JobController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateJobRequest $request, Job $job)
-    {
-        //
-    }
+    // public function update(UpdateJobRequest $request, Job $job)
+    // {
+
+    // }
 
     /**
      * Remove the specified resource from storage.
