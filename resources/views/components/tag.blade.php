@@ -4,7 +4,7 @@
     $classes = 'bg-white/10 font-semibold rounded-xl hover:bg-white/25 transition-colors duration-300';
 
     if ($size === 'base') {
-        $classes .= ' px-5 py-1 text-sm inline-block mb-3';
+        $classes .= ' px-5 py-1 text-sm';
     }
 
     if ($size === 'small') {

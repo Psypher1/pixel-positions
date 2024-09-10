@@ -21,35 +21,35 @@
                     {{-- <img src="{{ Vite::asset('resources/images/pixel-logo.svg') }}" width="20" alt=""> --}}
                     {{-- <img class="block" src="{{ asset('images/pixel-logo.svg') }}" width="20"alt="Pixel Positions Logo"> --}}
 
-                    <img src="{{ Vite::asset('resources/images/og-logo.svg') }}" " alt="">
-                    {{-- <img class="block" src="{{ asset('images/og-logo.svg') }}" alt="Pixel Positions Logo"> --}}
+                    {{-- <img src="{{ Vite::asset('resources/images/og-logo.svg') }}" " alt=""> --}}
+                    <img class="block" src="{{ asset('images/og-logo.svg') }}" alt="Pixel Positions Logo">
                     {{-- <span class="block">Pixel Positions</span> --}}
                 </a>
             </div>
             <div class="space-x-6 font-semibold">
-                <a href="/">Jobs</a>
-                <a >Careers</a>
-                <a >Salaries</a>
+                <a href="#">Jobs</a>
+                <a href="#">Careers</a>
+                <a href="#">Salaries</a>
             </div>
 
             @auth()
-    <div class="flex space-x-6 font-semibold">
+                <div class="flex space-x-6 font-semibold">
 
-                                <a href="/jobs/create">Post a job</a>
-                                <form method="POST" action="/auth/logout">
-                                    @csrf
-                                    @method('DELETE')
+                    <a href="/jobs/create">Post a job</a>
+                    <form method="POST" action="/auth/logout">
+                        @csrf
+                        @method('DELETE')
 
-                                    <button>Log Out</button>
-                                </form>
-                            </div>
-@endauth
+                        <button>Log Out</button>
+                    </form>
+                </div>
+            @endauth
 
             @guest
-                            <div class="space-x-6 font-semibold">
-                                <a href="/auth/register">Sign Up</a>
-                                <a href="/auth/login">Login</a>
-                            </div>
+                <div class="space-x-6 font-semibold">
+                    <a href="/auth/register">Sign Up</a>
+                    <a href="/auth/login">Login</a>
+                </div>
             @endguest
         </nav>
     </header>

@@ -20,11 +20,13 @@ class JobController extends Controller
     {
 
         // $jobs = Job::with(['tags', 'employer'])->simplePaginate(5);
-        $jobs = Job::all()->groupBy('featured');
+        // $jobs = Job::all()->groupBy('featured');
+        $jobs = Job::latest()->get()->groupBy('featured');
         $tags = Tag::all();
 
         // return $jobs;
         // dd($tags);
+
 
         return view('jobs.index', [
             'jobs' => $jobs[0],
@@ -50,7 +52,7 @@ class JobController extends Controller
         $attributes = $request->validate([
             'title' => ['required'],
             'salary' => ['required'],
-            'location' => ['required'],
+            'location' => ['required', Rule::in(['On Site', 'Remote', 'Hybrid'])],
             'job_type' => ['required', Rule::in(['Part Time', 'Full Time', 'Contract'])],
             'url' => ['required', 'url'],
             'tags' => ['nullable'],
@@ -75,7 +77,7 @@ class JobController extends Controller
      */
     public function show(Job $job)
     {
-        return view('jobs.show', ['job' => $job]);
+        //
     }
 
     /**
