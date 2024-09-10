@@ -4,4 +4,7 @@ This is the final project that uses the lessons from [Laravel in 30 Days](https:
 
 The lessons and project were courtesy of [Laracasts](https://laracasts.com)
 
+## Credentials
+email: name@mail.com
+password: password
 

@@ -28,28 +28,28 @@
             </div>
             <div class="space-x-6 font-semibold">
                 <a href="/">Jobs</a>
-                <a href="#">Careers</a>
-                <a href="#">Salaries</a>
+                <a >Careers</a>
+                <a >Salaries</a>
             </div>
 
             @auth()
     <div class="flex space-x-6 font-semibold">
 
-                        <a href="/jobs/create">Post a job</a>
-                        <form method="POST" action="/auth/logout">
-                            @csrf
-                            @method('DELETE')
+                                <a href="/jobs/create">Post a job</a>
+                                <form method="POST" action="/auth/logout">
+                                    @csrf
+                                    @method('DELETE')
 
-                            <button>Log Out</button>
-                        </form>
-                    </div>
+                                    <button>Log Out</button>
+                                </form>
+                            </div>
 @endauth
 
             @guest
-                    <div class="space-x-6 font-semibold">
-                        <a href="/auth/register">Sign Up</a>
-                        <a href="/auth/login">Login</a>
-                    </div>
+                            <div class="space-x-6 font-semibold">
+                                <a href="/auth/register">Sign Up</a>
+                                <a href="/auth/login">Login</a>
+                            </div>
             @endguest
         </nav>
     </header>
