@@ -15,6 +15,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/jobs', [JobController::class, 'store']);
 });
 
+Route::get('/jobs/{job}', [JobController::class, 'show']);
+
 // invokable controller
 Route::get('/search', SearchController::class);
 Route::get('/tags/{tag:name}', TagController::class);

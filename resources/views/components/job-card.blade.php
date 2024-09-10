@@ -3,7 +3,11 @@
 <x-panel class="flex flex-col text-center">
     <p class="self-start text-sm text-gray-400">{{ $job->employer->name }}</p>
     <div class="py-8 ">
-        <h3 class="font-semibold group-hover:text-blue-600 text-xl">{{ $job->title }} </h3>
+        <h3 class="font-semibold group-hover:text-blue-600 text-xl">
+            <a href="{{ $job->url }}" target="_blank">
+                {{ $job->title }}
+            </a>
+        </h3>
         <p class="mt-3 text-sm">{{ $job->job_type }} - {{ $job->salary }}</p>
     </div>
 
