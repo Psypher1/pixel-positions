@@ -85,16 +85,32 @@ class JobController extends Controller
      */
     public function edit(Job $job)
     {
-        //
+        return view('jobs.edit', ['job' => $job]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    // public function update(UpdateJobRequest $request, Job $job)
-    // {
+    //UpdateJobRequest $request
+    public function update(Request $request, Job $job)
+    {
+        $attributes = $request->validate([
+            'title' => ['required'],
+            'salary' => ['required'],
+            'location' => ['required', Rule::in(['On Site', 'Remote', 'Hybrid'])],
+            'job_type' => ['required', Rule::in(['Part Time', 'Full Time', 'Contract'])],
+            'url' => ['required', 'url'],
+            'tags' => ['nullable'],
+        ]);
 
-    // }
+        $attributes['featured'] = $request->has('featured');
+
+        $job = Auth::user()->employer->jobs()->update(Arr::except($attributes, 'tags'));
+
+
+        return redirect('/jobs/' . $job->id);
+
+    }
 
     /**
      * Remove the specified resource from storage.

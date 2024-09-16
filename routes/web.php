@@ -15,6 +15,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/jobs', [JobController::class, 'store']);
 });
 
+Route::get('/jobs/{job}/edit', [JobController::class, 'edit']);
+// Route::patch('/jobs/{job}', [JobController::class, 'update']);
+// Route::delete('/jobs/{job}', [JobController::class, 'destroy']);
+
 Route::get('/jobs/{job}', [JobController::class, 'show']);
 
 // invokable controller
